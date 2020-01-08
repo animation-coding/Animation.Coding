@@ -1,0 +1,346 @@
+body
+{
+    background-color: #040940;
+}
+
+p
+{
+
+    font-size: 16px;
+    color: #505b6d;
+    line-height: 26px;
+    font-family: 'Open Sans', sans-serif;
+}
+#Card-area
+{
+    position: relative;
+    padding: 112px 0 118px;
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.Card-single .Card-single-item
+{
+    padding: 60px 30px 10px;
+    border-radius: 4px;
+    background-color: #fff;
+    transition: 0.3s;
+    box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.384);
+}
+
+.Card-single .Card-single-item .icon
+{
+    position: relative;
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 50px;
+    line-height: 75px;
+    border-radius: 50%;
+    background-color: #f03858;
+    color: #fff;
+    font-size: 40px;
+    z-index: 9;
+}
+.Card-single .Card-single-item.two .icon
+{
+    background-color: #693cb8;
+
+}
+.Card-single .Card-single-item.three .icon
+{
+    background-color: #4dd1ed;
+    
+}
+.Card-single .Card-single-item.four .icon
+{
+    background-color: #ecae19;
+    
+}
+
+
+.Card-single .Card-single-item h3
+{
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-size: 24px;
+    line-height: 34px;
+    
+}
+
+.Card-single .Card-single-item .icon:before
+{
+   position: absolute;
+   width: 125px;
+   height: 125px;
+   content: '';
+   top: -27px;
+   left: -28px;
+   border-radius: 50%;
+   background-color: rgba(240, 56, 88, 0.2);
+    
+}
+.Card-single .Card-single-item .icon:after{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: -14px;
+    left: -15px;
+    border-radius: 50%;
+    background-color: rgba(240,56, 88, 0.5);
+    z-index: -1;
+    content:'';
+}
+.Card-single .Card-single-item.two .icon:before
+{
+    background-color: rgba(105, 60, 184, 0.2);
+}
+
+.Card-single .Card-single-item.two .icon:after
+{
+    background-color: rgba(105, 60, 184, 0.5);
+}
+.Card-single .Card-single-item.three .icon:before
+{
+    background-color: rgba(77, 208, 237, 0.2);
+}
+
+.Card-single .Card-single-item.three .icon:after
+{
+    background-color: rgba(77, 208, 237, 0.5);
+}
+
+.Card-single .Card-single-item.four .icon:before
+{
+    background-color: rgba(236, 174, 25, 0.2);
+}
+.Card-single .Card-single-item.four .icon:after
+{
+    background-color: rgba(236, 174, 25, 0.5);
+}
+
+
+.Card-single .hover-shape
+{
+    position: absolute;
+    width: 20px;
+    height: auto;
+    z-index: 1;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.5s cubic-bezier(0.215, 0.61, 0.355,1) 0s;
+    transform: rotate(260deg);
+
+}
+.Card-single .hover-shape-1
+{
+    left: 30px;
+    top:30px;
+}
+.Card-single .hover-shape-2
+{
+   right:35%;
+   top:40px;
+
+}
+.Card-single .hover-shape-3
+{
+    right: 30px;
+    bottom: 40%;
+}
+.Card-single .hover-shape-4
+{
+   right: 35%;
+   bottom:40px;
+}
+
+.Card-single .hover-shape-5
+{
+    left: 30px;
+    bottom: 35%;
+}
+
+
+.Card-single:hover .hover-shape
+{
+    opacity: 1;
+    transform:rotate(100deg)
+}
+.Card-single:hover .hover-shape-1
+{
+    left:-25px;
+    top:25px
+}
+.Card-single:hover .hover-shape-2
+{
+    right:35%;
+    top:-30px;
+}
+.Card-single:hover .hover-shape-3
+{
+    right:-20px;
+    bottom:40%
+}
+.Card-single:hover .hover-shape-4
+{
+    right:35%;
+    bottom: -30px;
+}
+.Card-single:hover .hover-shape-5
+{
+    left:-25px;
+    bottom:35%;
+}
+.Card-single .Card-single-item:hover
+{
+    background-color: #d22d4a;
+}
+.Card-single .Card-single-item.two:hover
+{
+    background-color: #693cb8;
+}
+.Card-single .Card-single-item.three:hover .icon
+{
+    color:#693cb8;
+}
+
+.Card-single .Card-single-item.three:hover
+{
+    background-color: #3fb3cc;
+}
+.Card-single .Card-single-item.three:hover .icon
+{
+    color: #4dd1ed;
+}
+.Card-single .Card-single-item.four:hover
+{
+    background-color: #ed9626;
+}
+.Card-single .Card-single-item.four:hover .icon
+{
+    color: #ecae19;
+}
+
+.Card-single .Card-single-item:hover .icon:before
+{
+    background-color: rgba(255,255, 255, 0.2);
+}
+
+.Card-single .Card-single-item:hover .icon:after
+{
+    background-color: rgba(255,255, 255, 0.5);
+}
+
+.Card-single .Card-single-item:hover h3,
+.Card-single .Card-single-item:hover p
+{
+    color: #fff !important;
+}
+
+.Card-single .Card-single-item:hover .icon
+{
+    background-color: #fff;
+    color: #f03858;
+}
+
+
+.Card-single .Card-single-item.two:hover .icon
+{
+    background-color: #fff;
+    color: #693cb8;
+}
+
+.load-more-btn a
+{
+    background-image: linear-gradient(90deg, rgb(174, 14, 233)0%, rgb(46,25,167) 100%);
+    box-shadow: 0px 0px 25px rgba(0,0,0,0.20);
+    display: inline-block;
+    border-radius: 25px;
+    margin-top: 50px;
+    padding: 14px 36px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #fff;
+    background-size: 100% auto;
+}
+.load-more-btn a:hover
+{
+    background-size: 200% auto;
+    text-decoration: none;
+}
+
+
+
+/**********************Responsive************/
+@media only screen and (min-width:360px) and (max-width:479px)
+{
+    .Card-single
+    {
+        padding:60px 30px 25px;
+    }
+
+}
+
+@media only screen and (min-width:320px) and (max-width:359px)
+{
+    .Card-single
+    {
+        padding:60px 30px 25px;
+    }
+
+}
+
+@media only screen and (min-width:480px) and (max-width:767px)
+{
+    .Card-single
+    {
+        padding:60px 30px 25px;
+    }
+
+}
+
+
+@media only screen and (min-width:768px) and (max-width:991px)
+{
+    .Card-single
+    {
+        padding:60px 20px 10px;
+        margin: 0 0 30px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

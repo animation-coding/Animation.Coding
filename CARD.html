@@ -1,0 +1,449 @@
+<!doctype html>
+<html lang="zxx">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>Arribo - App Landing Page</title>
+    <!--bootstrap css-->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+   
+
+
+
+   <link rel="stylesheet" type="text/css" href="css/fontawesome-all.min.css">
+   <link rel="stylesheet" type="text/css" href="css/icomoon.css">
+
+
+
+   <style>
+
+    body{background-color:
+       #040940;
+   }
+    
+   
+   
+    p {
+       font-size: 16px;
+       color: 
+       #505b6d;
+       line-height: 26px;
+       font-family: 'Open Sans', sans-serif;
+   }
+   #Card-area {
+       padding: 112px 0 118px;
+       position: relative;
+       background-position: top right;
+       background-repeat: no-repeat;
+       background-size: contain;
+   }
+   
+   
+   
+   .Card-single .Card-single-item {
+       padding: 60px 30px 10px;
+       border-radius: 4px;
+       background-color: #fff;
+       -webkit-transition: 0.3s;
+       transition: 0.3s;
+       box-shadow: 0px 0px 25px
+   rgba(0,0,0,0.20);
+   }
+   
+   .Card-single .Card-single-item .icon {
+       width: 70px;
+       height: 70px;
+       margin: 0 auto 50px;
+       line-height: 75px;
+       position: relative;
+       border-radius: 50%;
+       background-color: #f03858;
+       color: #fff;
+       font-size: 40px;
+       z-index: 9
+   }
+   
+   .Card-single .Card-single-item.two .icon {
+       background-color: #693cb8
+   }
+   
+   .Card-single .Card-single-item.three .icon {
+       background-color: #4dd1ed
+   }
+   
+   .Card-single .Card-single-item.four .icon {
+       background-color: #ecae19
+   }
+   
+   .Card-single .Card-single-item .icon:before {
+       width: 125px;
+       height: 125px;
+       position: absolute;
+       content: '';
+       top: -27px;
+       left: -28px;
+       border-radius: 50%;
+       background-color: rgba(240, 56, 88, 0.2);
+   }
+   
+   .Card-single .Card-single-item .icon:after {
+       width: 100px;
+       height: 100px;
+       position: absolute;
+       content: '';
+       top: -14px;
+       left: -15px;
+       border-radius: 50%;
+       background-color: rgba(240, 56, 88, 0.5);
+       z-index: -1
+   }
+   
+   .Card-single .Card-single-item.two .icon:before {
+       background-color: rgba(105, 60, 184, 0.2);
+   }
+   
+   .Card-single .Card-single-item.two .icon:after {
+       background-color: rgba(105, 60, 184, 0.5);
+   }
+   
+   .Card-single .Card-single-item.three .icon:before {
+       background-color: rgba(77, 208, 237, 0.2);
+   }
+   
+   .Card-single .Card-single-item.three .icon:after {
+       background-color: rgba(77, 208, 237, 0.5);
+   }
+   
+   .Card-single .core-feature-single-item.four .icon:before {
+       background-color: rgba(236, 174, 25, 0.2);
+   }
+   
+   .Card-single .Card-single-item.four .icon:after {
+       background-color: rgba(236, 174, 25, 0.5);
+   }
+   
+   .Card-single .Card-single-item h3 {
+       font-weight: 600;
+       margin-bottom: 10px;
+       font-size: 24px;
+       line-height: 34px;
+   }
+   
+   .Card-single .hover-shape {
+       width: 20px;
+       height: auto;
+       position: absolute;
+       z-index: 1;
+       opacity: 0;
+       pointer-events: none;
+       transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+       transform: rotate(260deg);
+   }
+   
+   .Card-single .hover-shape-1 {
+       left: 30px;
+       top: 30px;
+   }
+   
+   .Card-single .hover-shape-2 {
+       right: 35%;
+       top: 40px;
+   }
+   
+   .Card-single .hover-shape-3 {
+       right: 30px;
+       bottom: 40%;
+   }
+   
+   .Card-single .hover-shape-4 {
+       right: 35%;
+       bottom: 40px;
+   }
+   
+   .Card-single .hover-shape-5 {
+       left: 30px;
+       bottom: 35%;
+   }
+   
+   .Card-single:hover .hover-shape {
+       opacity: 1;
+       transform: rotate(100deg);
+   }
+   
+   .Card-single:hover .hover-shape-1 {
+       left: -25px;
+       top: 25px;
+   }
+   
+   .Card-single:hover .hover-shape-2 {
+       right: 35%;
+       top: -30px;
+   }
+   
+   .Card-single:hover .hover-shape-3 {
+       right: -20px;
+       bottom: 40%;
+   }
+   
+   .Card-single:hover .hover-shape-4 {
+       right: 35%;
+       bottom: -30px;
+   }
+   
+   .Card-single:hover .hover-shape-5 {
+       left: -25px;
+       bottom: 35%;
+   }
+   
+   .Card-single .Card-single-item:hover
+   {  
+         background-color: #d22d4a;
+   }
+   
+   .Card-single .Card-single-item.two:hover {
+       background-color: #693cb8;
+   }
+   
+   .Card-single .Card-single-item.two:hover .icon {
+       color: #693cb8;
+   }
+   
+   .Card-single .Card-single-item.three:hover {
+       background-color: #3fb3cc
+   }
+   
+   .Card-single .Card-single-item.three:hover .icon {
+       color: #4dd1ed
+   }
+   
+   .Card-single .Card-single-item.four:hover {
+       background-color: #ed9626;
+   }
+   
+   .Card-single .Card-single-item.four:hover .icon {
+       color: #ecae19
+   }
+   
+   .Card-single .Card-single-item:hover .icon:before {
+       background-color: rgba(255, 255, 255, 0.2);
+   }
+   
+   .Card-single .Card-single-item:hover .icon:after {
+       background-color: rgba(255, 255, 255, 0.5);
+   }
+   
+   .Card-single .Card-single-item:hover h3,
+   .Card-single .Card-single-item:hover p {
+       color: #fff !important
+   }
+   
+   .Card-single .Card-single-item:hover .icon {
+       background-color: #fff;
+       color: #f03858
+   }
+   
+   .load-more-btn a {
+       background-image: linear-gradient( 90deg, rgb(174, 14, 233) 0%, rgb(46, 25, 167) 100%);
+       box-shadow: 0px 0px 25px rgba(0,0,0,0.20);
+       display: inline-block;
+       border-radius: 25px;
+       margin-top: 50px;
+       padding: 14px 36px;
+       text-transform: uppercase;
+       font-weight: 500;
+       color: #fff;
+       background-size: 100% auto
+   }
+   
+   .load-more-btn a:hover {
+       background-size: 200% auto;
+       text-decoration: none;
+   }
+   /****
+   .Card-single.v2 {
+       background-color: #040940;
+       border: 1px solid #2a2e5d
+   }
+   */
+   
+   
+   
+   
+   
+   @media only screen and (min-width: 360px) and (max-width: 479px) {
+    
+   
+   .Card-single
+   {
+       padding: 60px 30px 25px;
+    
+   }
+   
+   }
+   
+   
+   
+   @media only screen and (min-width: 320px) and (max-width: 359px) {
+    
+   
+    .Card-single
+    {
+        padding: 60px 30px 25px;
+     
+    }
+    
+    }
+    
+   
+   
+   @media only screen and (min-width: 768px) and (max-width: 991px) {
+    
+   .Card-single
+    {
+       margin: 0 0 30px;
+       padding: 60px 20px 10px;
+   }
+   
+   }
+   
+   
+   @media only screen and (min-width: 480px) and (max-width: 767px) {
+   
+   .Card-single{
+   
+       padding: 60px 30px 25px;
+   }
+   
+   }
+   
+   
+   
+   </style>
+   
+</head>
+<body>
+     
+    <section id="Card-area" class="bg-2">
+      
+      
+
+        <div class="container">
+           
+           
+           
+
+            <div class="row">
+
+
+                <!--start core feature single-->
+                <div class="col-lg-3 col-md-6">
+                    <div class="Card-single">
+                        
+                        <div class="Card-single-item text-center">
+                            
+                            <div class="icon">
+                                <i class="icon-gear"></i>
+                            </div>
+
+                            <h3>Quick Setup</h3>
+                            <p>The app is really easy to install, the complete setup process will take less than 1 minute of your time.</p>
+                        </div>
+
+
+                        <img class="hover-shape-1 hover-shape" src="icon/shape-one.svg" alt="Shape One">
+                        <img class="hover-shape-2 hover-shape" src="icon/shape-two.svg" alt="Shape Two">
+                        <img class="hover-shape-3 hover-shape" src="icon/shape-three.svg" alt="Shape Three">
+                        <img class="hover-shape-4 hover-shape" src="icon/shape-four.svg" alt="Shape Four">
+                        <img class="hover-shape-5 hover-shape" src="icon/shape-five.svg" alt="Shape Five">
+                    </div>
+                </div>
+                <!--end core feature single-->
+
+
+                <!--start core feature single-->
+                <div class="col-lg-3 col-md-6">
+                    <div class="Card-single">
+                        <div class="Card-single-item two text-center">
+                            <div class="icon">
+                                <i class="icon-web-design"></i>
+                            </div>
+                            <h3>Lovely Design</h3>
+                            <p>With carefully thought-out design, Arribo looks great on any device and Easy to Use, Easy way to customize.</p>
+                        </div>  <img class="hover-shape-1 hover-shape" src="icon/shape-one.svg" alt="Shape One">
+                        <img class="hover-shape-2 hover-shape" src="icon/shape-two.svg" alt="Shape Two">
+                        <img class="hover-shape-3 hover-shape" src="icon/shape-three.svg" alt="Shape Three">
+                        <img class="hover-shape-4 hover-shape" src="icon/shape-four.svg" alt="Shape Four">
+                        <img class="hover-shape-5 hover-shape" src="icon/shape-five.svg" alt="Shape Five">
+                    </div>
+                </div>
+                <!--end core feature single-->
+
+
+                <!--start core feature single-->
+                <div class="col-lg-3 col-md-6">
+                    <div class="Card-single">
+                        <div class="Card-single-item three text-center">
+                            <div class="icon three">
+                                <i class="icon-report"></i>
+                            </div>
+                            <h3>Optimized Data</h3>
+                            <p>Speed is very important when you work with loading data, especially if you have a large number of users.</p>
+                        </div>
+                        <img class="hover-shape-1 hover-shape" src="icon/shape-one.svg" alt="Shape One">
+                        <img class="hover-shape-2 hover-shape" src="icon/shape-two.svg" alt="Shape Two">
+                        <img class="hover-shape-3 hover-shape" src="icon/shape-three.svg" alt="Shape Three">
+                        <img class="hover-shape-4 hover-shape" src="icon/shape-four.svg" alt="Shape Four">
+                        <img class="hover-shape-5 hover-shape" src="icon/shape-five.svg" alt="Shape Five">
+                    
+                         </div>
+                </div>
+                <!--end core feature single-->
+
+
+                <!--start core feature single-->
+                <div class="col-lg-3 col-md-6">
+                    <div class="Card-single">
+                        <div class="Card-single-item four text-center">
+                            <div class="icon four">
+                                <i class="icon-list"></i>
+                            </div>
+                            <h3>Secure Data</h3>
+                            <p>Transfer all information with the help of SSL - a solution allowing you to save any data from the public eye.</p>
+                        </div> 
+                        <img class="hover-shape-1 hover-shape" src="icon/shape-one.svg" alt="Shape One">
+                        <img class="hover-shape-2 hover-shape" src="icon/shape-two.svg" alt="Shape Two">
+                        <img class="hover-shape-3 hover-shape" src="icon/shape-three.svg" alt="Shape Three">
+                        <img class="hover-shape-4 hover-shape" src="icon/shape-four.svg" alt="Shape Four">
+                        <img class="hover-shape-5 hover-shape" src="icon/shape-five.svg" alt="Shape Five">
+                    
+                    </div>
+                </div>
+                <!--end core feature single-->
+
+
+            </div>
+
+            <div class="row">
+                <!--start read more button-->
+                <div class="col-lg-12">
+                    <div class="load-more-btn text-center">
+                        <a href="#">Learn More</a>
+                    </div>
+                </div>
+                <!--end read more button-->
+            </div>
+
+        </div>
+    </section>
+
+
+</body>
+</html>
+
+
+
+
